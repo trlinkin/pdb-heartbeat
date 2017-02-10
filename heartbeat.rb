@@ -18,7 +18,7 @@ conn.ssl_version = :TLSv1
 conn.read_timeout = 120
 conn.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
-conn.ca_file = Puppet[:cacert]
+conn.ca_file = Puppet[:localcacert]
 conn.cert = OpenSSL::X509::Certificate.new(File.read(Puppet[:hostcert]))
 conn.key = OpenSSL::PKey::RSA.new(File.read(Puppet[:hostprivkey]))
 
