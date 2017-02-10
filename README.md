@@ -16,6 +16,10 @@ This check script requires one argument, the hostname of the PuppetDB server.
 Use the hostname that was originally provided to the Puppet Enterprise console
 upon it's configuration.
 
+```shell
+./heartbeat.rb puppetdb.example.com
+```
+
 ## Results
 
 The execution of this check will result in a very simple log file being
